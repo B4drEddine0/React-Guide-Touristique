@@ -1,0 +1,448 @@
+{
+  "places": [
+    {
+      "id": "1",
+      "name": "Lagune de Marchica",
+      "category": "Sites naturels",
+      "shortDescription": "L'une des plus grandes lagunes de la Méditerranée occidentale, classée site d'intérêt biologique.",
+      "description": "La lagune de Marchica (Mar Chica) s'étend sur environ 25 km de long et 7 km de large, séparée de la mer Méditerranée par un cordon littoral. C'est l'un des écosystèmes les plus riches du Maroc oriental : on y observe des flamants roses, des hérons cendrés, des avocettes et de nombreux oiseaux migrateurs. Le site fait l'objet d'un vaste projet d'aménagement touristique (Marchica Med) avec marina, hôtels et espaces verts. Les promenades aménagées le long de la rive sud offrent des couchers de soleil spectaculaires sur les eaux calmes de la lagune.",
+      "coverImage": "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?auto=format&fit=crop&w=1200&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "openingHours": {
+        "monday": "Accès libre",
+        "tuesday": "Accès libre",
+        "wednesday": "Accès libre",
+        "thursday": "Accès libre",
+        "friday": "Accès libre",
+        "saturday": "Accès libre",
+        "sunday": "Accès libre"
+      },
+      "prices": "Accès libre",
+      "address": "Bou Areg, rive sud de la lagune, Nador",
+      "transport": [
+        {
+          "mode": "bus",
+          "details": "Lignes urbaines vers le front de mer de Marchica."
+        },
+        {
+          "mode": "taxi",
+          "details": "Grands taxis disponibles depuis le centre-ville de Nador (10 min)."
+        },
+        {
+          "mode": "car",
+          "details": "Stationnement gratuit le long de la corniche."
+        }
+      ],
+      "accessibility": "Promenade aménagée, zones plates et accessibles en fauteuil roulant.",
+      "isActive": true,
+      "createdAt": "2025-01-10T09:00:00.000Z",
+      "updatedAt": "2025-01-10T09:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "name": "Cap des Trois Fourches",
+      "category": "Sites naturels",
+      "shortDescription": "Promontoire sauvage classé Ramsar, avec falaises vertigineuses, phare historique et criques secrètes.",
+      "description": "Le Cap des Trois Fourches (Ras Tleta Madari) est l'un des sites naturels les plus spectaculaires du littoral marocain. Ce promontoire rocheux s'avance sur 20 km dans la Méditerranée, offrant des falaises abruptes pouvant atteindre 300 mètres de haut. Classé site Ramsar depuis 2005, il abrite le phoque moine de Méditerranée, des tortues caouannes et des dauphins. Le phare construit à l'époque espagnole offre un panorama à 360° inoubliable. Les criques turquoise accessibles par des sentiers escarpés sont un paradis pour les plongeurs et les amateurs de snorkeling.",
+      "coverImage": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "openingHours": {
+        "monday": "Accès libre",
+        "tuesday": "Accès libre",
+        "wednesday": "Accès libre",
+        "thursday": "Accès libre",
+        "friday": "Accès libre",
+        "saturday": "Accès libre",
+        "sunday": "Accès libre"
+      },
+      "prices": "Accès libre",
+      "address": "Cap des Trois Fourches, 40 km au nord de Nador",
+      "transport": [
+        {
+          "mode": "taxi",
+          "details": "Grands taxis possibles jusqu'au village, puis piste à pied."
+        },
+        {
+          "mode": "car",
+          "details": "Véhicule tout-terrain recommandé pour le dernier tronçon non goudronné (15 km)."
+        }
+      ],
+      "accessibility": "Route partiellement non goudronnée. Sentiers escarpés vers les criques.",
+      "isActive": true,
+      "createdAt": "2025-01-12T08:15:00.000Z",
+      "updatedAt": "2026-03-02T10:50:40.249Z"
+    },
+    {
+      "id": "3",
+      "name": "Plage de Charrana",
+      "category": "Plages",
+      "shortDescription": "Plage familiale prisée pour son sable fin, ses eaux calmes et son cadre naturel préservé.",
+      "description": "Charrana est l'une des plages les plus populaires de la région de Nador, située à environ 25 km au nord-ouest de la ville. Son sable fin doré et ses eaux cristallines peu profondes en font un lieu idéal pour les familles. La plage est bordée de collines verdoyantes qui lui confèrent un caractère sauvage et préservé. En été, des parasols et des restaurants saisonniers s'installent le long du rivage. L'eau y est particulièrement calme grâce à la protection naturelle du cap.",
+      "coverImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "openingHours": {
+        "monday": "Accès libre",
+        "tuesday": "Accès libre",
+        "wednesday": "Accès libre",
+        "thursday": "Accès libre",
+        "friday": "Accès libre",
+        "saturday": "Accès libre",
+        "sunday": "Accès libre"
+      },
+      "prices": "Accès libre — Parasol : 30 MAD/jour en saison",
+      "address": "Route côtière de Charrana, 25 km nord-ouest de Nador",
+      "transport": [
+        {
+          "mode": "taxi",
+          "details": "Grand taxi depuis Nador centre (~30 min, 15 MAD/personne)."
+        },
+        {
+          "mode": "car",
+          "details": "Parking saisonnier gratuit en bord de plage."
+        }
+      ],
+      "accessibility": "Accès facile en voiture. Plage de sable accessible.",
+      "isActive": true,
+      "createdAt": "2025-01-11T10:00:00.000Z",
+      "updatedAt": "2025-01-11T10:00:00.000Z"
+    },
+    {
+      "id": "4",
+      "name": "Mont Gourougou",
+      "category": "Sites naturels",
+      "shortDescription": "Ancien volcan culminant à 900 m, offrant des panoramas exceptionnels sur Nador, Melilla et la Méditerranée.",
+      "description": "Le mont Gourougou (Adrar n Gurugu) est un ancien volcan éteint qui domine la ville de Nador du haut de ses 900 mètres. Couvert de forêts de pins et d'eucalyptus, il offre plusieurs sentiers de randonnée balisés de difficulté variable. Depuis le sommet, la vue panoramique embrasse la lagune de Marchica, la ville de Nador, la ville espagnole de Melilla et la mer Méditerranée. Le site est chargé d'histoire : c'est depuis ces hauteurs que les résistants rifains menaient leur lutte pendant la période coloniale. Au printemps, la montagne se couvre de fleurs sauvages.",
+      "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "openingHours": {
+        "monday": "06:00 - 18:00",
+        "tuesday": "06:00 - 18:00",
+        "wednesday": "06:00 - 18:00",
+        "thursday": "06:00 - 18:00",
+        "friday": "06:00 - 18:00",
+        "saturday": "06:00 - 19:00",
+        "sunday": "06:00 - 19:00"
+      },
+      "prices": "Accès libre",
+      "address": "Massif du Gourougou, périphérie sud de Nador",
+      "transport": [
+        {
+          "mode": "car",
+          "details": "Route goudronnée jusqu'à mi-pente, piste ensuite. Parking limité."
+        },
+        {
+          "mode": "walk",
+          "details": "Sentiers de randonnée depuis la base (2-3h aller)."
+        }
+      ],
+      "accessibility": "Sentiers de difficulté variable. Chaussures de marche recommandées.",
+      "isActive": true,
+      "createdAt": "2025-01-14T11:00:00.000Z",
+      "updatedAt": "2025-01-14T11:00:00.000Z"
+    },
+    {
+      "id": "5",
+      "name": "Corniche de Nador",
+      "category": "Loisirs et divertissements",
+      "shortDescription": "Promenade balnéaire animée avec cafés, restaurants panoramiques et vue imprenable sur la lagune.",
+      "description": "La Corniche de Nador est le cœur battant de la vie sociale nadorie. Cette promenade de bord de mer longe la lagune de Marchica sur plusieurs kilomètres, bordée de palmiers, de cafés en terrasse et de restaurants de poisson. Le soir, l'ambiance devient particulièrement vivante avec les familles qui flânent, les vendeurs ambulants et les couchers de soleil dorés sur la lagune. C'est l'endroit idéal pour déguster un thé à la menthe en regardant les bateaux de pêche rentrer au port. Le boulevard Mohammed V, artère principale, y mène directement.",
+      "coverImage": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?auto=format&fit=crop&w=1200&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "openingHours": {
+        "monday": "Accès libre 24h",
+        "tuesday": "Accès libre 24h",
+        "wednesday": "Accès libre 24h",
+        "thursday": "Accès libre 24h",
+        "friday": "Accès libre 24h",
+        "saturday": "Accès libre 24h",
+        "sunday": "Accès libre 24h"
+      },
+      "prices": "Accès libre — Consommations dans les cafés à partir de 10 MAD",
+      "address": "Boulevard de la Corniche, front de mer, Nador",
+      "transport": [
+        {
+          "mode": "walk",
+          "details": "Accessible à pied depuis le centre-ville (10 min)."
+        },
+        {
+          "mode": "taxi",
+          "details": "Petits taxis disponibles partout en ville."
+        },
+        {
+          "mode": "bus",
+          "details": "Plusieurs lignes urbaines desservent le front de mer."
+        }
+      ],
+      "accessibility": "Promenade plate et aménagée, accessible en fauteuil roulant.",
+      "isActive": true,
+      "createdAt": "2025-01-16T15:00:00.000Z",
+      "updatedAt": "2025-01-16T15:00:00.000Z"
+    },
+    {
+      "id": "6",
+      "name": "Plage de Boukana",
+      "category": "Plages",
+      "shortDescription": "Crique sauvage aux eaux turquoise, prisée des amateurs de nature intacte et de plongée.",
+      "description": "La plage de Boukana (Bouqana) est une magnifique crique située sur la route du Cap des Trois Fourches. Moins fréquentée que Charrana, elle offre un cadre naturel exceptionnel avec ses eaux d'un bleu turquoise profond, ses rochers sculptés par l'érosion et son sable doré. C'est un spot réputé pour le snorkeling et la plongée grâce à la clarté de l'eau et la richesse des fonds marins. En été, des motocross sont parfois organisés sur la plage. Le lieu est idéal pour ceux qui recherchent la tranquillité loin de la foule.",
+      "coverImage": "https://images.unsplash.com/photo-1437719417032-8799fd0a0f8e?auto=format&fit=crop&w=1200&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1437719417032-8799fd0a0f8e?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1520454974749-611b7248ffdb?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "openingHours": {
+        "monday": "Accès libre",
+        "tuesday": "Accès libre",
+        "wednesday": "Accès libre",
+        "thursday": "Accès libre",
+        "friday": "Accès libre",
+        "saturday": "Accès libre",
+        "sunday": "Accès libre"
+      },
+      "prices": "Accès libre",
+      "address": "Route du Cap des Trois Fourches, 30 km nord de Nador",
+      "transport": [
+        {
+          "mode": "car",
+          "details": "Accessible par route côtière, parking naturel en bord de plage."
+        },
+        {
+          "mode": "taxi",
+          "details": "Grand taxi depuis Nador, prévoir le retour à l'avance."
+        }
+      ],
+      "accessibility": "Accès par chemin non goudronné. Descente à pied vers la crique.",
+      "isActive": true,
+      "createdAt": "2025-01-18T13:20:00.000Z",
+      "updatedAt": "2025-01-18T13:20:00.000Z"
+    },
+    {
+      "id": "7",
+      "name": "Souk El Had",
+      "category": "Shopping et souks",
+      "shortDescription": "Grand marché hebdomadaire de Nador où se mêlent artisanat rifain, épices, poissons frais et produits du terroir.",
+      "description": "Le Souk El Had de Nador est le marché traditionnel le plus important de la région. Chaque semaine, des centaines de marchands proposent leurs produits : épices colorées, olives, huile d'olive du Rif, poissons frais du port de Beni Enzar, tissus berbères, poterie et bijoux en argent. L'ambiance y est authentique et animée — les cris des vendeurs, les odeurs d'épices et le marchandage font partie de l'expérience. Le souk est aussi un lieu social majeur où les Nadoris se retrouvent. Les visiteurs y trouveront des souvenirs artisanaux uniques à prix négociables.",
+      "coverImage": "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1200&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "openingHours": {
+        "monday": "09:00 - 19:00",
+        "tuesday": "09:00 - 19:00",
+        "wednesday": "09:00 - 19:00",
+        "thursday": "09:00 - 19:00",
+        "friday": "15:00 - 19:00",
+        "saturday": "09:00 - 20:00",
+        "sunday": "08:00 - 20:00"
+      },
+      "prices": "Variable selon marchands — Négociation attendue",
+      "address": "Centre-ville de Nador, quartier du souk",
+      "transport": [
+        {
+          "mode": "walk",
+          "details": "Accessible à pied depuis les avenues Hassan II et Mohammed V."
+        },
+        {
+          "mode": "bus",
+          "details": "Desservi par plusieurs lignes urbaines."
+        },
+        {
+          "mode": "taxi",
+          "details": "Petits taxis depuis tous les quartiers."
+        }
+      ],
+      "accessibility": "Rues étroites et très animées, affluence le dimanche.",
+      "isActive": true,
+      "createdAt": "2025-02-01T10:00:00.000Z",
+      "updatedAt": "2025-02-01T10:00:00.000Z"
+    },
+    {
+      "id": "8",
+      "name": "Embouchure de la Moulouya",
+      "category": "Sites naturels",
+      "shortDescription": "Réserve naturelle protégée à la frontière algérienne, paradis des flamants roses et des oiseaux migrateurs.",
+      "description": "L'embouchure du fleuve Moulouya, à l'est de Nador près de la frontière algérienne, est l'une des zones humides les plus importantes du bassin méditerranéen. Classée site Ramsar et réserve de biosphère, elle abrite une biodiversité exceptionnelle : flamants roses, hérons, avocettes, aigrettes, et des centaines d'espèces d'oiseaux migrateurs font escale ici entre l'Europe et l'Afrique. Les dunes, les marais et la forêt riveraine créent un paysage d'une beauté rare. Un site incontournable pour les ornithologues et les amoureux de nature sauvage.",
+      "coverImage": "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?auto=format&fit=crop&w=1200&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1470137237906-85d36fdd7546?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1504567961542-e24d9439a724?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "openingHours": {
+        "monday": "Accès libre en journée",
+        "tuesday": "Accès libre en journée",
+        "wednesday": "Accès libre en journée",
+        "thursday": "Accès libre en journée",
+        "friday": "Accès libre en journée",
+        "saturday": "Accès libre en journée",
+        "sunday": "Accès libre en journée"
+      },
+      "prices": "Accès libre",
+      "address": "Embouchure de la Moulouya, Kariat Arkmane, 35 km est de Nador",
+      "transport": [
+        {
+          "mode": "car",
+          "details": "Route nationale vers Saïdia, bifurcation vers Kariat Arkmane."
+        },
+        {
+          "mode": "taxi",
+          "details": "Grand taxi depuis Nador (45 min environ)."
+        }
+      ],
+      "accessibility": "Chemins naturels non aménagés. Bottes recommandées en hiver.",
+      "isActive": true,
+      "createdAt": "2025-02-05T09:30:00.000Z",
+      "updatedAt": "2025-02-05T09:30:00.000Z"
+    },
+    {
+      "id": "9",
+      "name": "Kariat Arkmane",
+      "category": "Restaurants",
+      "shortDescription": "Village de pêcheurs sur la lagune, réputé pour ses restaurants de poisson frais grillé au charbon.",
+      "description": "Kariat Arkmane est un petit village de pêcheurs pittoresque situé sur la rive est de la lagune de Marchica. Connu dans toute la région pour ses restaurants de poisson frais, c'est ici que les Nadoris viennent le vendredi et le week-end pour déguster sardines grillées, crevettes royales, calamars et tajines de poisson cuisinés avec les prises du jour. Les barques colorées des pêcheurs alignées sur la rive et les filets qui sèchent au soleil créent une atmosphère authentique et photogénique. Le village est aussi le point de départ pour explorer les zones humides de la Moulouya.",
+      "coverImage": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "openingHours": {
+        "monday": "11:00 - 21:00",
+        "tuesday": "11:00 - 21:00",
+        "wednesday": "11:00 - 21:00",
+        "thursday": "11:00 - 21:00",
+        "friday": "11:00 - 22:00",
+        "saturday": "11:00 - 22:00",
+        "sunday": "11:00 - 22:00"
+      },
+      "prices": "Repas complet poisson : 60-120 MAD",
+      "address": "Kariat Arkmane, rive est de la lagune de Marchica, 30 km de Nador",
+      "transport": [
+        {
+          "mode": "car",
+          "details": "Route nationale vers Saïdia, accès direct au village."
+        },
+        {
+          "mode": "taxi",
+          "details": "Grand taxi depuis Nador (40 min, environ 10 MAD/personne)."
+        }
+      ],
+      "accessibility": "Village accessible en voiture. Restaurants en bord de lagune.",
+      "isActive": true,
+      "createdAt": "2025-02-10T14:00:00.000Z",
+      "updatedAt": "2025-02-10T14:00:00.000Z"
+    },
+    {
+      "id": "10",
+      "name": "Plage de Sidi El Bachir",
+      "category": "Plages",
+      "shortDescription": "Longue plage de sable doré aux portes de Nador, idéale pour la baignade et les sports nautiques.",
+      "description": "La plage de Sidi El Bachir est la plage urbaine la plus accessible de Nador, située à quelques minutes du centre-ville. Son large ruban de sable doré s'étend sur plusieurs kilomètres, offrant suffisamment d'espace même en haute saison. Les eaux sont généralement calmes et peu profondes, parfaites pour les enfants. En été, elle s'anime avec des terrains de beach-volley, des vendeurs de beignets (sfenj) et de maïs grillé, et une ambiance festive typiquement nadorie. Le coucher de soleil y est particulièrement beau avec vue sur la lagune.",
+      "coverImage": "https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=1200&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "openingHours": {
+        "monday": "Accès libre",
+        "tuesday": "Accès libre",
+        "wednesday": "Accès libre",
+        "thursday": "Accès libre",
+        "friday": "Accès libre",
+        "saturday": "Accès libre",
+        "sunday": "Accès libre"
+      },
+      "prices": "Accès libre — Location parasol : 20 MAD",
+      "address": "Sidi El Bachir, entrée nord de Nador",
+      "transport": [
+        {
+          "mode": "walk",
+          "details": "20 minutes à pied depuis le centre-ville."
+        },
+        {
+          "mode": "taxi",
+          "details": "Petit taxi depuis n'importe quel quartier (10-15 MAD)."
+        },
+        {
+          "mode": "bus",
+          "details": "Lignes urbaines vers le front de mer."
+        }
+      ],
+      "accessibility": "Accès aménagé. Douches et vestiaires en saison.",
+      "isActive": true,
+      "createdAt": "2025-02-15T11:00:00.000Z",
+      "updatedAt": "2025-02-15T11:00:00.000Z"
+    }
+  ],
+  "subscribers": [
+    {
+      "id": "1",
+      "firstName": "Yassine",
+      "email": "yassine@example.com",
+      "status": "active",
+      "createdAt": "2025-02-01T09:30:00.000Z"
+    },
+    {
+      "id": "2",
+      "firstName": "Nora",
+      "email": "nora@example.com",
+      "status": "active",
+      "createdAt": "2025-02-05T14:10:00.000Z"
+    },
+    {
+      "id": "3",
+      "firstName": "Karim",
+      "email": "karim@example.com",
+      "status": "active",
+      "createdAt": "2025-02-10T10:45:00.000Z"
+    },
+    {
+      "id": "4",
+      "firstName": "Amina",
+      "email": "amina@example.com",
+      "status": "active",
+      "createdAt": "2025-02-14T16:20:00.000Z"
+    }
+  ],
+  "events": [
+    {
+      "id": "1",
+      "title": "Festival de la Corniche",
+      "date": "2026-06-12",
+      "location": "Marchica",
+      "description": "Animation culturelle et musicale en soirée.",
+      "status": "active"
+    },
+    {
+      "id": "2",
+      "title": "Marché artisanal rifain",
+      "date": "2026-05-02",
+      "location": "Souk El Had",
+      "description": "Produits artisanaux et dégustations locales.",
+      "status": "active"
+    }
+  ]
+}
