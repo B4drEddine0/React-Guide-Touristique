@@ -1,7 +1,6 @@
 import axios from 'axios';
 
-const apiBaseUrl = import.meta.env.VITE_API_URL ?? 'http://localhost:3001';
-const n8nWebhookUrl = import.meta.env.VITE_N8N_WEBHOOK_URL ?? '';
+const apiBaseUrl = import.meta.env.VITE_API_URL ?? 'https://guide-touristique-api.onrender.com';
 
 export const localApi = axios.create({
   baseURL: apiBaseUrl,
@@ -18,5 +17,3 @@ localApi.interceptors.request.use((config) => {
   }
   return config;
 });
-
-export const getN8nWebhookUrl = () => n8nWebhookUrl.trim();

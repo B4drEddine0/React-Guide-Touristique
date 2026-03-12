@@ -22,7 +22,6 @@ function AdminLayout() {
 
   return (
     <div className="min-h-screen grid grid-cols-1 lg:grid-cols-[280px_1fr]">
-      {/* Sidebar */}
       <aside className="bg-white border-r border-slate-100 lg:min-h-screen">
         <div className="p-6 border-b border-slate-100">
           <div className="flex items-center gap-3">
@@ -61,7 +60,6 @@ function AdminLayout() {
         </div>
       </aside>
 
-      {/* Main */}
       <main className="bg-slate-50/50 p-6 lg:p-10 overflow-y-auto">
         <Outlet />
       </main>

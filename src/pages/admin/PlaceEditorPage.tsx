@@ -18,10 +18,8 @@ import {
 import type { PlaceCategory, WeekDayKey } from '../../types/form';
 import type { TransportMode } from '../../types/models';
 
-/* ────────── Constants ────────── */
 const TOTAL_STEPS = 4;
 
-/* ────────── Step config ────────── */
 const STEPS = [
   {
     id: 1,
@@ -77,7 +75,6 @@ const stepFields: Record<number, string[]> = {
   4: ['bus', 'taxi', 'car', 'walk', 'other', 'isActive'],
 };
 
-/* ────────── Schema ────────── */
 const placeSchema = yup.object({
   name: yup.string().trim().required('Le nom est obligatoire.'),
   category: yup
@@ -133,7 +130,6 @@ const defaultValues: PlaceFormValues = {
   isActive: true,
 };
 
-/* ────────── Slide variants ────────── */
 const slideVariants = {
   enter: (direction: number) => ({ x: direction > 0 ? 80 : -80, opacity: 0 }),
   center: { x: 0, opacity: 1 },
@@ -297,7 +293,6 @@ function PlaceEditorPage() {
 
   return (
     <div className="space-y-6 max-w-4xl mx-auto">
-      {/* Header */}
       <div>
         <h1 className="font-heading font-bold text-display-sm text-slate-900 mb-1">
           {isEditMode ? 'Modifier un lieu' : 'Ajouter un lieu'}
@@ -305,7 +300,6 @@ function PlaceEditorPage() {
         <p className="text-sm text-slate-400">Étape {step} sur {TOTAL_STEPS} — {STEPS[step - 1].subtitle}</p>
       </div>
 
-      {/* ── Step Indicator ── */}
       <div className="flex items-center gap-2">
         {STEPS.map((s, i) => {
           const colors = stepColorMap[s.color];
@@ -360,7 +354,6 @@ function PlaceEditorPage() {
         })}
       </div>
 
-      {/* ── Progress bar ── */}
       <div className="h-1 bg-slate-100 rounded-full overflow-hidden">
         <motion.div
           className={`h-full rounded-full ${stepColorMap[STEPS[step - 1].color].bg}`}
@@ -370,11 +363,9 @@ function PlaceEditorPage() {
         />
       </div>
 
-      {/* ── Form ── */}
       <div onKeyDown={blockEnterSubmit}>
         <div className="bg-white rounded-2xl shadow-card border border-slate-100 overflow-hidden relative min-h-[420px]">
           <AnimatePresence mode="wait" custom={direction}>
-            {/* ═══ STEP 1: Identity ═══ */}
             {step === 1 && (
               <motion.div
                 key="step1"
@@ -424,7 +415,6 @@ function PlaceEditorPage() {
               </motion.div>
             )}
 
-            {/* ═══ STEP 2: Content ═══ */}
             {step === 2 && (
               <motion.div
                 key="step2"
@@ -458,7 +448,6 @@ function PlaceEditorPage() {
               </motion.div>
             )}
 
-            {/* ═══ STEP 3: Practical ═══ */}
             {step === 3 && (
               <motion.div
                 key="step3"
@@ -540,7 +529,6 @@ function PlaceEditorPage() {
               </motion.div>
             )}
 
-            {/* ═══ STEP 4: Transport & Publish ═══ */}
             {step === 4 && (
               <motion.div
                 key="step4"
@@ -619,7 +607,6 @@ function PlaceEditorPage() {
                   </div>
                 </div>
 
-                {/* Status toggle */}
                 <div className="mt-6 p-4 bg-slate-50 rounded-xl border border-slate-100">
                   <label htmlFor="isActive" className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
@@ -650,7 +637,6 @@ function PlaceEditorPage() {
           </AnimatePresence>
         </div>
 
-        {/* ── Navigation buttons ── */}
         <div className="flex items-center justify-between mt-6">
           <div>
             {step > 1 && (

@@ -64,12 +64,10 @@ function LoginPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-ocean-600 via-ocean-500 to-turquoise-500 flex items-center justify-center px-4 relative overflow-hidden">
-      {/* Decorative circles */}
       <div className="absolute top-[-120px] right-[-120px] w-96 h-96 bg-white/5 rounded-full blur-3xl" />
       <div className="absolute bottom-[-80px] left-[-80px] w-72 h-72 bg-turquoise-400/10 rounded-full blur-3xl" />
 
       <div className="w-full max-w-md relative z-10">
-        {/* Branding */}
         <div className="text-center mb-10">
           <div className="inline-flex items-center justify-center mb-5">
             <SiteLogo className="w-20 h-20 rounded-2xl" />
@@ -82,7 +80,6 @@ function LoginPage() {
           </h1>
         </div>
 
-        {/* Form Card */}
         <form
           className="bg-white rounded-3xl p-8 shadow-elevated"
           onSubmit={handleSubmit(onSubmit)}

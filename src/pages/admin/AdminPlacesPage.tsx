@@ -93,7 +93,6 @@ function AdminPlacesPage() {
 
   return (
     <div className="space-y-6">
-      {/* Header */}
       <div className="flex items-end justify-between gap-4">
         <div>
           <h1 className="font-heading font-bold text-display-sm text-slate-900 mb-1">Gestion des lieux</h1>
@@ -106,7 +105,6 @@ function AdminPlacesPage() {
         </Link>
       </div>
 
-      {/* Filters */}
       <div className="bg-white rounded-2xl shadow-card border border-slate-100 p-5">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <div>
@@ -165,7 +163,6 @@ function AdminPlacesPage() {
 
       {loading ? <Loader text="Chargement de la liste..." /> : null}
 
-      {/* Table */}
       <div className="bg-white rounded-2xl shadow-card border border-slate-100 overflow-x-auto">
         <table className="w-full border-collapse">
           <thead>
@@ -247,7 +244,6 @@ function AdminPlacesPage() {
         </table>
       </div>
 
-      {/* Confirm Modal */}
       <ConfirmModal
         open={modalAction !== null}
         title={

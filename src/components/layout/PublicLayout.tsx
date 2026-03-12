@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import SiteLogo from '../common/SiteLogo';
+import NewsletterForm from '../forms/NewsletterForm';
 
 function PublicLayout() {
   const [scrolled, setScrolled] = useState(false);
@@ -28,7 +29,6 @@ function PublicLayout() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Header */}
       <header
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ease-out ${
           scrolled
@@ -39,7 +39,6 @@ function PublicLayout() {
         }`}
       >
         <div className="max-w-content mx-auto px-4 sm:px-6 h-18 flex items-center">
-          {/* Left — Logo */}
           <Link to="/" className="flex items-center gap-3 group flex-shrink-0">
             <SiteLogo className="w-11 h-11 flex-shrink-0 rounded-xl shadow-soft group-hover:scale-105 transition-transform duration-300" />
             <span className={`font-heading font-bold text-xl tracking-tight transition-colors duration-300 ${
@@ -49,13 +48,11 @@ function PublicLayout() {
             </span>
           </Link>
 
-          {/* Center — Navigation */}
           <nav className="hidden md:flex items-center gap-1 absolute left-1/2 -translate-x-1/2">
             <NavLink to="/" end className={navLinkClass}>Accueil</NavLink>
             <NavLink to="/lieux" className={navLinkClass}>Destinations</NavLink>
           </nav>
 
-          {/* Right — CTA + Mobile Toggle */}
           <div className="flex items-center gap-3 ml-auto">
             <a
               href="/#get-app"
@@ -93,7 +90,6 @@ function PublicLayout() {
           </div>
         </div>
 
-        {/* Mobile menu */}
         <AnimatePresence>
           {mobileOpen ? (
             <motion.div
@@ -125,16 +121,13 @@ function PublicLayout() {
         </AnimatePresence>
       </header>
 
-      {/* Main content */}
       <main className="flex-1">
         <Outlet />
       </main>
 
-      {/* Footer */}
       <footer className="bg-slate-900 text-white">
         <div className="max-w-content mx-auto px-4 sm:px-6 py-16">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
-            {/* Brand */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 items-start">
             <div className="md:col-span-1">
               <div className="flex items-center gap-3 mb-5">
                 <SiteLogo className="w-12 h-12 flex-shrink-0 rounded-xl" />
@@ -147,7 +140,6 @@ function PublicLayout() {
               </p>
             </div>
 
-            {/* Quick links */}
             <div>
               <h3 className="font-heading font-bold text-sm uppercase tracking-wider text-white mb-5">
                 Navigation
@@ -158,7 +150,16 @@ function PublicLayout() {
               </ul>
             </div>
 
-            {/* Social */}
+            <div>
+              <h3 className="font-heading font-bold text-sm uppercase tracking-wider text-white mb-5">
+                Newsletter
+              </h3>
+              <p className="text-slate-400 text-sm mb-4">
+                Recevez les dernières actualités et événements de Nador.
+              </p>
+              <NewsletterForm compact />
+            </div>
+
             <div>
               <h3 className="font-heading font-bold text-sm uppercase tracking-wider text-white mb-5">
                 Suivez-nous

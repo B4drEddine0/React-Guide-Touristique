@@ -45,13 +45,11 @@ function ConfirmModal({
           exit="hidden"
           transition={{ duration: 0.2 }}
         >
-          {/* Backdrop */}
           <div
             className="absolute inset-0 bg-slate-900/40 backdrop-blur-sm"
             onClick={onCancel}
           />
 
-          {/* Modal */}
           <motion.div
             className="relative w-full max-w-md bg-white rounded-2xl shadow-2xl border border-slate-100 overflow-hidden"
             variants={modalVariants}
@@ -61,7 +59,6 @@ function ConfirmModal({
             transition={{ duration: 0.25, ease: 'easeOut' }}
           >
             <div className="p-6">
-              {/* Icon */}
               <div
                 className={`mx-auto w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${
                   danger ? 'bg-red-50' : 'bg-ocean-50'
@@ -98,12 +95,10 @@ function ConfirmModal({
                 )}
               </div>
 
-              {/* Text */}
               <h3 className="text-center text-lg font-bold text-slate-900 mb-2">{title}</h3>
               <p className="text-center text-sm text-slate-500 leading-relaxed">{message}</p>
             </div>
 
-            {/* Actions */}
             <div className="flex gap-3 px-6 pb-6">
               <button
                 type="button"

@@ -11,7 +11,6 @@ import PlaceCard from '../components/places/PlaceCard';
 import { PLACE_CATEGORIES } from '../constants/categories';
 import { fetchPlaces } from '../features/places/placesSlice';
 
-/* ────────── Category icons ────────── */
 const categoryIcons: Record<string, React.ReactNode> = {
   'Plages': (
     <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -61,7 +60,6 @@ const categoryIcons: Record<string, React.ReactNode> = {
   ),
 };
 
-/* ────────── Color map for unique category gradients ────────── */
 const categoryColors: Record<string, { bg: string; text: string; hoverBg: string }> = {
   'Plages': { bg: 'bg-amber-50', text: 'text-amber-500', hoverBg: 'group-hover:bg-amber-500' },
   'Sites naturels': { bg: 'bg-emerald-50', text: 'text-emerald-500', hoverBg: 'group-hover:bg-emerald-500' },
@@ -96,9 +94,7 @@ function HomePage() {
 
   return (
     <div>
-      {/* ═══════════ HERO — Clean fullscreen with centered text ═══════════ */}
       <section ref={heroRef} className="relative h-screen min-h-[600px] overflow-hidden">
-        {/* Parallax background */}
         <motion.div style={{ y: heroY }} className="absolute inset-0 scale-[1.1]">
           <img
             src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=2000&q=80"
@@ -107,11 +103,9 @@ function HomePage() {
           />
         </motion.div>
 
-        {/* Smooth cinematic overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/50 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-slate-900/30" />
 
-        {/* Content — left-aligned, vertically centered */}
         <motion.div
           style={{ opacity: heroOpacity }}
           className="relative h-full max-w-content mx-auto px-6 sm:px-8 flex items-center"
@@ -172,7 +166,6 @@ function HomePage() {
         </motion.div>
       </section>
 
-      {/* ═══════════ CATEGORIES — Colorful cards ═══════════ */}
       <section className="bg-white py-20 md:py-28">
         <div className="max-w-content mx-auto px-4 sm:px-6">
           <FadeIn>
@@ -198,7 +191,6 @@ function HomePage() {
                     to={`/lieux?category=${encodeURIComponent(category)}`}
                     className="group relative flex flex-col items-center gap-3 p-6 bg-white rounded-2xl border border-slate-100 hover:border-transparent hover:shadow-elevated hover:-translate-y-1 transition-all duration-300 overflow-hidden"
                   >
-                    {/* Background glow on hover */}
                     <span className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${colors.bg}`} />
                     <span className={`relative w-14 h-14 rounded-2xl ${colors.bg} ${colors.text} flex items-center justify-center ${colors.hoverBg} group-hover:text-white group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-sm group-hover:shadow-lg`}>
                       {categoryIcons[category] ?? (
@@ -219,7 +211,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* ═══════════ FEATURED PLACES ═══════════ */}
       <section className="bg-sand-50 py-20 md:py-28">
         <div className="max-w-content mx-auto px-4 sm:px-6">
           <FadeIn>
@@ -271,7 +262,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* ═══════════ WHY AFAYI — Feature highlights ═══════════ */}
       <section className="bg-white py-20 md:py-28">
         <div className="max-w-content mx-auto px-4 sm:px-6">
           <FadeIn>
@@ -322,7 +312,6 @@ function HomePage() {
                   </div>
                   <h3 className="font-heading font-bold text-xl text-slate-900 mb-3">{feature.title}</h3>
                   <p className="text-slate-500 leading-relaxed text-[15px]">{feature.desc}</p>
-                  {/* Bottom accent line */}
                   <div className={`absolute bottom-0 left-8 right-8 h-1 bg-gradient-to-r ${feature.gradient} rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left`} />
                 </div>
               </FadeIn>
@@ -331,7 +320,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* ═══════════ STATS BAND ═══════════ */}
       <section className="relative bg-slate-900 py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-ocean opacity-90" />
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-turquoise-400/20 rounded-full blur-[120px]" />
@@ -370,16 +358,13 @@ function HomePage() {
         </div>
       </section>
 
-      {/* ═══════════ GET THE APP — CTA Section ═══════════ */}
       <section id="get-app" className="bg-sand-50 py-20 md:py-28 overflow-hidden">
         <div className="max-w-content mx-auto px-4 sm:px-6">
           <div className="relative bg-gradient-to-br from-slate-900 via-ocean-800 to-slate-900 rounded-[2rem] overflow-hidden">
-            {/* Glow orbs */}
             <div className="absolute top-0 right-0 w-96 h-96 bg-turquoise-500/15 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3" />
             <div className="absolute bottom-0 left-0 w-72 h-72 bg-ocean-400/15 rounded-full blur-[100px] translate-y-1/3 -translate-x-1/4" />
 
             <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-12 items-center p-10 md:p-16">
-              {/* Left — Content */}
               <FadeIn>
                 <div>
                   <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-turquoise-500/20 text-turquoise-300 text-xs font-bold rounded-full uppercase tracking-wider mb-6">
@@ -412,16 +397,12 @@ function HomePage() {
                 </div>
               </FadeIn>
 
-              {/* Right — Phone mockup */}
               <FadeIn delay={0.2}>
                 <div className="hidden lg:flex justify-center">
                   <div className="relative">
-                    {/* Phone frame */}
                     <div className="w-[260px] h-[520px] bg-slate-800 rounded-[3rem] border-4 border-slate-700 p-3 shadow-2xl">
                       <div className="w-full h-full rounded-[2.3rem] overflow-hidden bg-gradient-to-b from-ocean-500 to-turquoise-500 flex flex-col items-center justify-center relative">
-                        {/* Notch */}
                         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-28 h-6 bg-slate-800 rounded-b-2xl" />
-                        {/* Content */}
                         <img src="/tourist-logo.png" alt="Afayi" className="w-20 h-20 object-contain mb-4 drop-shadow-lg" />
                         <p className="text-white font-heading font-bold text-2xl">Afayi</p>
                         <p className="text-white/70 text-xs mt-1">Explorez. Découvrez. Partagez.</p>
@@ -432,7 +413,6 @@ function HomePage() {
                         </div>
                       </div>
                     </div>
-                    {/* Glow behind phone */}
                     <div className="absolute inset-0 bg-gradient-to-b from-turquoise-400/30 to-ocean-400/30 rounded-[3rem] blur-2xl -z-10 scale-110" />
                   </div>
                 </div>
@@ -442,14 +422,12 @@ function HomePage() {
         </div>
       </section>
 
-      {/* ═══════════ NEWSLETTER ═══════════ */}
       <section id="newsletter" className="bg-white py-20 md:py-28">
         <div className="max-w-content mx-auto px-4 sm:px-6">
           <FadeIn>
             <div className="relative overflow-hidden bg-gradient-to-br from-slate-900 to-ocean-900 rounded-3xl p-10 md:p-16">
               <div className="absolute top-0 right-0 w-80 h-80 bg-turquoise-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
               <div className="absolute bottom-0 left-0 w-60 h-60 bg-coral-500/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
-              {/* Pattern dots */}
               <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)', backgroundSize: '24px 24px' }} />
               <div className="relative max-w-xl">
                 <span className="inline-block px-4 py-1.5 bg-turquoise-500/20 text-turquoise-300 text-xs font-bold rounded-full uppercase tracking-wider mb-4">

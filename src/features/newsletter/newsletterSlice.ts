@@ -1,6 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import axios from 'axios';
-import { getN8nWebhookUrl, localApi } from '../../api/http';
+import { localApi } from '../../api/http';
 import type { Subscriber } from '../../types/models';
 import { toErrorMessage } from '../../utils/errors';
 
@@ -24,24 +23,17 @@ const initialState: NewsletterState = {
 };
 
 export const subscribeNewsletter = createAsyncThunk<
-  { source: 'n8n' | 'local' },
+  void,
   NewsletterFormPayload,
   { rejectValue: string }
 >('newsletter/subscribeNewsletter', async (payload, { rejectWithValue }) => {
   try {
-    const webhookUrl = getN8nWebhookUrl();
-
-    if (webhookUrl) {
-      await axios.post(webhookUrl, payload);
-      return { source: 'n8n' };
-    }
-
     const duplicateResponse = await localApi.get<Subscriber[]>('/subscribers', {
       params: { email: payload.email },
     });
 
     if (duplicateResponse.data.length > 0) {
-      return rejectWithValue('Cet email est deja inscrit.');
+      return rejectWithValue('Cet email est déjà inscrit.');
     }
 
     await localApi.post('/subscribers', {
@@ -49,8 +41,6 @@ export const subscribeNewsletter = createAsyncThunk<
       status: 'active',
       createdAt: new Date().toISOString(),
     });
-
-    return { source: 'local' };
   } catch (error) {
     return rejectWithValue(
       toErrorMessage(error, 'Inscription newsletter impossible.'),

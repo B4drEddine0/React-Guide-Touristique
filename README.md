@@ -4,7 +4,7 @@ Application web de guide touristique pour la ville de Nador avec:
 
 - Espace visiteur (accueil, liste, filtres, recherche, pagination, detail)
 - Espace administrateur (auth, dashboard, CRUD lieux, activation/desactivation)
-- Inscription newsletter (n8n webhook ou fallback local json-server)
+- Inscription newsletter (json-server)
 
 ## Stack
 
@@ -53,4 +53,4 @@ npm run dev
 - `db.json` contient:
   - `places`
   - `subscribers`
-  - `events` (pour les workflows n8n / Google Sheets)
+  - `events`

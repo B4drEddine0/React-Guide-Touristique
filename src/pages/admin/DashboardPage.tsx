@@ -30,7 +30,6 @@ function DashboardPage() {
 
   return (
     <div className="space-y-8">
-      {/* Header */}
       <div>
         <h1 className="font-heading font-bold text-display-sm text-slate-900 mb-1">Tableau de bord</h1>
         <p className="text-sm text-slate-500">
@@ -40,7 +39,6 @@ function DashboardPage() {
 
       {loading ? <Loader text="Chargement des indicateurs..." /> : null}
 
-      {/* KPI Cards */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         <article className="bg-white rounded-2xl shadow-card p-6 border border-slate-100">
           <div className="w-10 h-10 rounded-xl bg-ocean-50 flex items-center justify-center mb-3">
@@ -72,7 +70,6 @@ function DashboardPage() {
         </article>
       </div>
 
-      {/* Category Distribution */}
       <div>
         <div className="flex items-center justify-between mb-4">
           <h2 className="font-heading font-bold text-xl text-slate-800">Répartition par catégorie</h2>
@@ -93,7 +90,6 @@ function DashboardPage() {
         </div>
       </div>
 
-      {/* Quick Actions */}
       <div className="flex flex-wrap gap-3 pt-4 border-t border-slate-100">
         <Link to="/admin/lieux/nouveau" className="btn-primary">
           + Ajouter un lieu

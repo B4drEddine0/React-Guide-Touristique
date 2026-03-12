@@ -86,7 +86,6 @@ function PlaceDetailsPage() {
 
   return (
     <div>
-      {/* Back nav */}
       <div className="bg-white border-b border-slate-100 pt-18">
         <div className="max-w-content mx-auto px-4 sm:px-6 py-4">
           <button
@@ -102,11 +101,9 @@ function PlaceDetailsPage() {
         </div>
       </div>
 
-      {/* Image Gallery — immersive */}
       <section className="bg-slate-100">
         <div className="max-w-content mx-auto px-4 sm:px-6 py-6">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_240px] gap-3">
-            {/* Main image */}
             <div className="relative overflow-hidden rounded-2xl">
               <AnimatePresence mode="wait">
                 <motion.img
@@ -124,7 +121,6 @@ function PlaceDetailsPage() {
                 {activeImage + 1} / {gallery.length}
               </div>
             </div>
-            {/* Thumbnails */}
             {gallery.length > 1 ? (
               <div className="flex lg:flex-col gap-2 overflow-x-auto lg:overflow-y-auto">
                 {gallery.map((image, index) => (
@@ -151,10 +147,8 @@ function PlaceDetailsPage() {
         </div>
       </section>
 
-      {/* Content */}
       <div className="max-w-content mx-auto px-4 sm:px-6 py-12 md:py-16">
         <FadeIn>
-          {/* Title & Category */}
           <div className="mb-12">
             <span className="inline-block px-4 py-1.5 bg-ocean-50 text-ocean-600 text-xs font-bold rounded-full uppercase tracking-wider mb-4">
               {place.category}
@@ -168,10 +162,8 @@ function PlaceDetailsPage() {
           </div>
         </FadeIn>
 
-        {/* Info Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-14">
           <FadeIn delay={0.1}>
-            {/* Opening Hours */}
             <div className="bg-white rounded-2xl shadow-card overflow-hidden">
               <div className="px-6 py-4 bg-gradient-ocean">
                 <h3 className="text-sm font-bold text-white flex items-center gap-2">
@@ -193,7 +185,6 @@ function PlaceDetailsPage() {
           </FadeIn>
 
           <FadeIn delay={0.2}>
-            {/* Practical Info */}
             <div className="space-y-4">
               <div className="bg-white rounded-2xl shadow-card overflow-hidden">
                 <div className="px-6 py-4 bg-gradient-coral">
@@ -236,7 +227,6 @@ function PlaceDetailsPage() {
           </FadeIn>
         </div>
 
-        {/* Transport */}
         {place.transport && place.transport.length > 0 ? (
           <FadeIn>
             <div className="mb-14">
@@ -272,7 +262,6 @@ function PlaceDetailsPage() {
           </FadeIn>
         ) : null}
 
-        {/* Gallery full */}
         {gallery.length > 1 ? (
           <FadeIn>
             <div>

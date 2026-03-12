@@ -73,7 +73,6 @@ function PlacesPage() {
 
   return (
     <div>
-      {/* Page Header */}
       <section className="relative overflow-hidden bg-ocean-800 pt-32 pb-20 md:pt-36 md:pb-28">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 right-20 w-72 h-72 bg-turquoise-300 rounded-full blur-3xl" />
@@ -99,7 +98,6 @@ function PlacesPage() {
       </section>
 
       <div className="max-w-content mx-auto px-4 sm:px-6 py-10">
-        {/* Search & Filters */}
         <FadeIn>
           <div className="bg-white rounded-2xl shadow-card p-6 md:p-8 mb-10 -mt-16 relative z-10">
             <div className="mb-6">
@@ -152,7 +150,6 @@ function PlacesPage() {
           </div>
         </FadeIn>
 
-        {/* Loading Skeletons */}
         {loading ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {Array.from({ length: 6 }).map((_, i) => (
@@ -161,7 +158,6 @@ function PlacesPage() {
           </div>
         ) : null}
 
-        {/* Empty State */}
         {!loading && filteredItems.length === 0 ? (
           <EmptyState
             title="Aucune destination trouvée"
@@ -169,7 +165,6 @@ function PlacesPage() {
           />
         ) : null}
 
-        {/* Grid */}
         {!loading && paginatedItems.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {paginatedItems.map((place, index) => (
@@ -178,7 +173,6 @@ function PlacesPage() {
           </div>
         ) : null}
 
-        {/* Pagination */}
         <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
       </div>
     </div>
